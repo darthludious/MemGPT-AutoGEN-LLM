@@ -1,4 +1,4 @@
-## pip install pyautogen pymemgpt
+pip install pyautogen pymemgpt
 
 import os
 import autogen
