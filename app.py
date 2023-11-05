@@ -17,7 +17,7 @@ import openai
 config_list = [
     {
         "api_type": "open_ai",
-        "api_base": "https://ekisktiz8hegao-5001.proxy.runpod.net/v1",
+        "api_base": "https://192.168.2.69:1234/v1",
         "api_key": "NULL",
     },
 ]
@@ -31,7 +31,7 @@ llm_config = {"config_list": config_list, "seed": 42}
 USE_MEMGPT = True
 
 ## api keys for the memGPT
-openai.api_base="https://ekisktiz8hegao-5001.proxy.runpod.net/v1"
+openai.api_base="https://192.168.2.69:1234/v1"
 openai.api_key="NULL"
 
 
@@ -75,5 +75,5 @@ else:
 # Begin the group chat with a message from the user
 user_proxy.initiate_chat(
     coder,
-    message="Write a Function to print Numbers 1 to 10"
+    message="Hello, you are a new AI that I am working on. I am hoping to make you so you have the ability to updated yourself and add your own tools to your knowledgebase for future use. Learn everything from this doc you can, you are welcome to do other research as well including on AutoGen MemGPT Langchain and mistral 7b"
     )
